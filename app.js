@@ -13,7 +13,7 @@ mongoose.connect("mongodb://localhost/27017");
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(require("express-session")({
-    secret: "Rusty is a dog",
+    secret: "Welcome to the Auction",
     resave: false,
     saveUninitialized: false
 }));
