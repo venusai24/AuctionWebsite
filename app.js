@@ -34,9 +34,9 @@ app.get("/", function (req, res) {
     res.render("home");
 });
  
-// Showing secret page
-app.get("/secret", isLoggedIn, function (req, res) {
-    res.render("secret");
+// Showing auction page
+app.get("/auction", isLoggedIn, function (req, res) {
+    res.render("auction");
 });
  
 // Showing register form
@@ -68,7 +68,7 @@ app.post("/login", async function(req, res){
           //check if password matches
           const result = req.body.password === user.password;
           if (result) {
-            res.render("secret");
+            res.render("auction");
           } else {
             res.status(400).json({ error: "password doesn't match" });
           }
