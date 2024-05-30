@@ -1,0 +1,9 @@
+div {
+    display: flex; /* Make the div container display elements inline */
+    justify-content: space-between; /* Align items horizontally with space between */
+  }
+  
+  button {
+    /* Add styles for button appearance (e.g., background color, border) */
+  }
+  
